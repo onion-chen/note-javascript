@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress';
-import { resolve } from 'path';
 
 export default defineConfig({
   title: "javascript",
