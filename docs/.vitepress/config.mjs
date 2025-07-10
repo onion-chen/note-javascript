@@ -4,7 +4,7 @@ export default defineConfig({
   title: "javascript",
   description: "note javascript",
   lang: "zh-CN",
-  base: "/note-js/",
+  base: "/note-javascript/",
 
   head: [
     ["link", { rel: "icon", href: "/note-js/favicon.ico" }],
@@ -90,7 +90,7 @@ export default defineConfig({
     skipToContentLabel: '跳转到内容',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/onion-chen/note-javascript' }
     ]
   }
 })
