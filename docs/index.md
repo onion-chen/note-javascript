@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /js/
+      link: /src/base/
     - theme: alt
       text: 查看项目源码
       link: https://github.com/vuejs/vitepress

@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/note-javascript/",
 
   head: [
-    ["link", { rel: "icon", href: "/note-js/favicon.ico" }],
+    ["link", { rel: "icon", href: "/note-javascript/favicon.ico" }],
   ],
 
   themeConfig: {
