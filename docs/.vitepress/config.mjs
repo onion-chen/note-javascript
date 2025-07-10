@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
+import { resolve } from 'path';
 
 export default defineConfig({
   title: "javascript",
@@ -9,6 +10,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/note-js/favicon.ico" }],
   ],
+
   themeConfig: {
     logo: "/favicon.ico",
     search: {
@@ -27,11 +29,18 @@ export default defineConfig({
             text: '语法基础',
             link: '/src/base/',
             items: [
-              { text: '1.语法', link: '/src/base/grammar/01语法' },
-              { text: '2.变量', link: '/src/base/grammar/02变量' },
-              { text: '3.数据类型', link: '/src/base/grammar/03数据类型' },
-              { text: '4.操作符', link: '/src/base/grammar/04操作符' },
-              { text: '5.语句', link: '/src/base/grammar/05语句' }
+              {
+                text: '语法',
+                link: '/src/base/grammar/',
+                items: [
+                  { text: '1.语法', link: '/src/base/grammar/01语法' },
+                  { text: '2.变量', link: '/src/base/grammar/02变量' },
+                  { text: '3.数据类型', link: '/src/base/grammar/03数据类型' },
+                  { text: '4.操作符', link: '/src/base/grammar/04操作符' },
+                  { text: '5.语句', link: '/src/base/grammar/05语句' }
+                ]
+              },
+
             ]
           }
         ],
@@ -40,10 +49,12 @@ export default defineConfig({
         text: 'javascript进阶',
         items: [
           {
-            text: '语法基础',
-            link: '/src/elevate/',
+            text: '作用域和闭包',
+            link: '/src/elevate/scopes/',
             items: [
-              { text: '1.语法', link: '/src/base/grammar/01语法' },
+              { text: '1.this指向问题', link: '/src/elevate/scopes/01this指向问题' },
+              { text: '2.作用域和闭包', link: '/src/elevate/scopes/02作用域和闭包' },
+              { text: '3.变量和函数提升', link: '/src/elevate/scopes/03变量和函数提升' },
             ]
           }
         ],
