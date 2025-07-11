@@ -10,6 +10,17 @@ export default defineConfig({
     ["link", { rel: "icon", href: "/note-javascript/favicon.ico" }],
   ],
 
+  markdown: {
+    lineNumbers: true, // 显示行号
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '消息',
+      detailsLabel: '详细信息'
+    }
+  },
+
   themeConfig: {
     logo: "/favicon.ico",
     search: {
@@ -23,6 +34,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'javascript基础',
+        collapsed: false,
         items: [
           {
             text: '语法基础',
@@ -46,6 +58,7 @@ export default defineConfig({
       },
       {
         text: 'javascript进阶',
+        collapsed: true,
         items: [
           {
             text: '作用域和闭包',
@@ -66,7 +79,8 @@ export default defineConfig({
     },
 
     outline: {
-      label: '页面导航'
+      label: '页面导航',
+      level: 'deep'
     },
 
     lastUpdated: {

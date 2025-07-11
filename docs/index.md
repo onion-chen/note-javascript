@@ -11,5 +11,5 @@ hero:
       link: /src/base/
     - theme: alt
       text: 查看项目源码
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/onion-chen/note-javascript
 ---
